@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv --version:*)",
+      "Bash(uv pip list:*)",
+      "WebSearch",
+      "WebFetch(domain:console.groq.com)",
+      "Bash(chmod:*)",
+      "Bash(uv sync:*)",
+      "Bash(python3.13:*)",
+      "Bash(python3.12:*)",
+      "Bash(uv python:*)",
+      "Bash(uv run python:*)",
+      "Bash(uv run:*)"
+    ]
+  }
+}

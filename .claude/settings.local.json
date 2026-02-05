@@ -11,7 +11,10 @@
       "Bash(python3.12:*)",
       "Bash(uv python:*)",
       "Bash(uv run python:*)",
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(python:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(timeout 5 uvicorn:*)"
     ]
   }
 }

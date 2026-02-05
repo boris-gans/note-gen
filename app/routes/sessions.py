@@ -67,6 +67,7 @@ async def list_courses() -> list[dict]:
 @router.post("/sessions")
 async def create_session(body: SessionCreate) -> dict:
     conn = await get_async_conn()
+    print(body)
     try:
         # Verify course exists
         row = await conn.execute(

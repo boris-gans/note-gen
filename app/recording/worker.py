@@ -58,7 +58,7 @@ class RecordingWorker:
 
     def on_chunk_transcribed(self, fn: Callable[[dict], None]) -> None:
         """Register a callback invoked (from the worker thread) after each chunk.
-
+        
         ``fn`` receives::
 
             {
@@ -70,6 +70,7 @@ class RecordingWorker:
                 "segments": [...]      # raw Whisper segment dicts
             }
         """
+        print(f"Received chunk")
         self._callbacks.append(fn)
 
     def start(self) -> None:

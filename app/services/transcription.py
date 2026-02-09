@@ -14,6 +14,7 @@ class WhisperService:
     _instance: "WhisperService | None" = None
 
     def __init__(self) -> None:
+        print(f"STARTING MODEL: {settings.whisper_model}")
         self.model = WhisperModel(
             settings.whisper_model,
             device=settings.whisper_device,
